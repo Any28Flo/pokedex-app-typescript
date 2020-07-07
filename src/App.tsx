@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import 'react-bulma-components/dist/react-bulma-components.min.css';
+// @ts-ignore
+import {  Section, Container, Heading } from 'react-bulma-components';
 function App(): JSX.Element {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Section>
+            <Container breakpoint="fullhd">
+                    <Heading size={5} renderAs="p" className="is-danger">Pokemon app</Heading>
+            </Container>
+        </Section>
     </div>
   );
 }
